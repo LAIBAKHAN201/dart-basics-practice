@@ -1,6 +1,5 @@
 void main() {
-  // Single-line comment
-
+  // Single-line comment  
   /*
     Multi-line comment:
     Exploring data types in Dart:
@@ -55,13 +54,18 @@ In addition to the default values, Dart also provides type conversion functions 
   // want to see konsi datatype h
   print(houseno.runtimeType);
   //concatenantion +
-  //Concatenating strings: You can use the + operator to concatenate (join) two or more strings. 
+  //Concatenating strings: You can use the + operator to concatenate (join) two or more strings.
   String n1 = "laiba";
   String n2 = "khan";
-  print("my name is  " +n1 + n2);
+  print("my name is  " + n1 + n2);
   //string interpolation $variablename      ${expression} String interpolation: You can use string interpolation to include the value of a variable or expression inside a string. To use string interpolation, you can use the $ symbol followed by the variable or expression you want to include
   print("my name is $n1");
-  print("my name is ${n1.length } ");
-  //var keyword: a way to declare variable without specifying its type Using the var keyword can make your code shorter and easier to read, as you don't need to specify the data type of the variable. However, it is generally recommended to explicitly specify the data type of a variable whenever possible, as this makes the code more explicit and easier to understand.You can also use the var keyword to declare a variable without assigning a value to it. In this case, the type of the variable will be dynamic, which means that the variable can hold any type of valu e
-
+  print("my name is ${n1.length} ");
+  //var keyword: a way to declare variable without specifying its type Using the var keyword 
+  //dynamic keyword
+  // dynamic m hm data tpe change krsket h value change krte waqt
+  dynamic az=10;
+  print(az);
+  az="laiba";
+  print(az); 
 }
