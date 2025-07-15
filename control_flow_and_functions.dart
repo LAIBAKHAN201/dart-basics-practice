@@ -89,10 +89,53 @@ void main() {
   //is (if the object has the specified type then its true )
   var re = 10;
   print(re is int); //true output
-  print(re is String);//false
+  print(re is String); //false
   print(re is! int); //false output is!(isnot)
-  print(re is! String);//true
+  print(re is! String); //true
 
-//function  is a block of code that can be named and can be executed by calling its name. Functions can accept input parameters and can return a value
+  //function  is a block of code that can be named and can be executed by calling its name. Functions can accept input parameters and can return a value
+  int sub(int num1, int num2) {
+    int c = num1 + num2;
+    return c;
+  }
+
+  print(sub(5, 6));
+  //types of function
+  //1)NO ARGUMENT AND NO RETURN TYPE
+  void add() {
+    int a = 10;
+    int b = 30;
+    print(a + b);
+  }
+
+  add();
+  //2)with ARGUMENT AND NO RETURN TYPE
+  void add1(int a, int b) {
+    print(a + b);
+  }
+
+  add1(44, 55);
+  //3)NO ARGUMENT AND WITH RETURN TYPE
+  int add2() {
+    int a = 90, b = 90;
+    int c = a + b;
+    return c;
+  }
+
+  print(add2());
+  //4)WTH ARGUMENT AND WITH RETURN TYPE
+  int add3(int a, int b) {
+    int c = a + b;
+    return c;
+  }
+  print(add3(33, 44));
+
+
+//shorthand syntax (for function that contain just one expression ,u can use a shorthand syntax) the =>notation is sometimereffered to as arrow syntax
+
+
+
+
+
 
 }
