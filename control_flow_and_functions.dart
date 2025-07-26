@@ -128,10 +128,131 @@ void main() {
     int c = a + b;
     return c;
   }
+
   print(add3(33, 44));
 
+  //shorthand syntax (for function that contain just one expression ,u can use a shorthand syntax) the =>notation is sometimereffered to as arrow syntax
+  int add4(var a, var b) =>
+      a + b; //=>fat arrow here we cant use return it directly return
+  print(add4(33, 4232));
 
-//shorthand syntax (for function that contain just one expression ,u can use a shorthand syntax) the =>notation is sometimereffered to as arrow syntax
+  //TYPES OF PARAMETERS
+  //1)REQUIRED PARAMETER In Dart, required parameters are input parameters that must be provided when calling a function. Required parameters are defined by placing them in the function's parameter list, and they do not have default values
+  void student(String name, int role) {
+    print(name);
+    print(role);
+  }
+
+  student("laiba", 22718);
+
+  //2)OPTIONAL PARAMETER
+  //.)named parameter {}:when defining afunction,use{param1,param2,..}to specify named parameter
+  //when calling a function,you can specify named parameter using paramName:value
+  void student1(var name, {var roll, var age}) {
+    print(
+      "name: $name",
+    ); //jisko name parameter banana h usko {} is main likhe gai
+    print("roll: $roll");
+    print("age: $age");
+  }
+
+  student1(
+    "laiba",
+    roll: 22718,
+    age: 23,
+  ); //named parameter m aise argument pass krate h
+  student1(
+    "laiba",
+  ); //named parameter m agar argument pass na krae to woh default value daega aur error   ni aae ga normal function m error ata h
+  //one more thing agar named parameter m argument  ki jaga badal de to koi error ni aae ga
+  //agar required keyword ajae ga to error aaega   void student1(var name, {required var roll, var age})
+  //.)optional postional parameter []
+  void student2(var name, var roll, [var age]) {
+    //yaha age optional ban gaya iskai value ko pass ni karae to masla ni hoga
+    print("name: $name");
+    print("roll: $roll");
+    print("age: $age");
+  }
+
+  student2("laiba", 22718);
+  //.)default positional parameter
+  //if no default value is provided ,the default value is nul
+  //the default value must be compile time constant
+  //your function can use = to define defaullt values for both named and positional parameter
+  //named parameter
+  void student3(var name, {var roll = 0}) {
+    print("name: $name");
+    print("roll: $roll");
+  }
+
+  //positional parameter
+  void student4(var name, [var roll = 0]) {
+    //yaha hm ne default value di agar hm argument m pass ni krare gai to 0 aae gi agar argument m pass karaya to argument ali value aaegi
+    print("name: $name");
+    print("roll: $roll");
+  }
+
+  student3("laiba", roll: 22);
+  student4("laibaaa", 44);
+  student4("laibaaaaaaaaaa");
+
+  //for in loop for(varname in object){//statement}
+  var obj = [1, 2, 3, 4, 5, 6, 7, 8];
+  for (var x in obj) {
+    print(x);
+  }
+  //anonymous/lambda function is a namesless function
+  //In Dart, anonymous functions, also known as lambda expressions, are functions that are not given a name and are usually defined and called in a single expression. Anonymous functions can be assigned to variables or passed as arguments to other functions, and they are often used as short-hand for defining functions.
+  //(parameterlist){
+  //statement};
+  var myname = (String name) {
+    print(name);
+  };
+  Function myname1 = (int roll) {
+    print(roll);
+  };
+  myname("laiba");
+  myname1(99);
+
+  //function AS a first class (u can pass a function as a parameter to another function)
+  //In Dart, functions are first-class objects, which means that they can be treated like any other object in the language. This means that you can assign functions to variables, pass them as arguments to other functions, and return them from functions.
+  Function name = (String s) {
+    return s;
+  }; //annonymous function
+  void std(String a, Function n) {
+    print('$a ${n('laiba')}');
+  }
+
+  std("hello..", name); //here we use function as a parameter
+  Function marks() {
+    Function num = (int a, int b, int c) {
+      return a + b + c;
+    };
+    return num;
+  }
+
+  var x = marks(); //
+  print(x(10, 20, 30)); //function return
+  //lexical closure
+  //closure :Aclosure as a function object that has access to variable in its lexical scope ,even when the function its used outside of its original scope
+  var d = 0;
+  void outer() {
+    a = 5;
+    print("outer fun =$a");
+  }
+
+  outer();//yaha yai easily print hojae ga but main outer function ko void main sai bahar likho gi to error aae ga that is lexicalclosure
+
+
+
+
+
+
+
+
+
+
+
 
 
 
