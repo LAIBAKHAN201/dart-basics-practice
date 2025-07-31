@@ -8,3 +8,6 @@ void main(){
   az = "laiba";
   print(az);
 }
+//Difreence between var and dynamic keyword:
+//var variable onceassigned the type cant change
+//Dyamic variable type change over time

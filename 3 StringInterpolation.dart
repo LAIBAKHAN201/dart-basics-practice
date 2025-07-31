@@ -1,7 +1,7 @@
- void main(){   
-//In Dart, a String is a sequence of characters used to represent text. Here are a few ways to create and manipulate strings in Dart:
+void main() {
+  //In Dart, a String is a sequence of characters used to represent text. Here are a few ways to create and manipulate strings in Dart:
 
-// Creating strings: There are several ways to create strings in Dart. You can create a string using single quotes (') or double quotes ("), or using triple quotes (''' or """)..
+  // Creating strings: There are several ways to create strings in Dart. You can create a string using single quotes (') or double quotes ("), or using triple quotes (''' or """)..
   //concatenantion +
   //Concatenating strings: You can use the + operator to concatenate (join) two or more strings.
   String n1 = "laiba";
@@ -13,5 +13,16 @@
   print("my name is $n1");
   print("my name is ${n1 + n2}");
   print("my name is ${n1.length} ");
-
- }
+  //if u wanna use $to show use with /
+  print("\$");
+  //jaisa likha h waisaprint krana h to
+  print('''helllllllllllllllllllaa
+  
+  fler
+  fergerg
+  dfg
+  reg
+  rw'g
+  wreg'er
+  g''');
+}

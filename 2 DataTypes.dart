@@ -1,5 +1,4 @@
-void main(){
-  
+void main() {
   /*rule for creating variable name
   u are not allowed to use keyword as variable name
   u are allowed to use only number, alphabets, $    not use %,void
@@ -13,11 +12,10 @@ void main(){
   //variable declaration : int a;
   //variable initialization : a=10;
 
+  //In Dart, there are several data types that can be used to store different types of data. Here is a brief overview of some of the most common data types in Dart:
+  //DATATYPES:number ,string,booleans,lists,sets,maps,runes,symbols
 
-//In Dart, there are several data types that can be used to store different types of data. Here is a brief overview of some of the most common data types in Dart:
-//DATATYPES:number ,string,booleans,lists,sets,maps,runes,symbols 
-
-  //The int data type is used to store integer values (whole numbers)   
+  //The int data type is used to store integer values (whole numbers)
   int a = 10, b = 40;
   // here int is datatype, a is variable name, = is assignment operator, 10 is var  value
   print('Sum of integers: ${a + b}');
@@ -25,6 +23,7 @@ void main(){
   //The double data type is used to store decimal values. It is recommended to use double for decimal values instead of float, as double has a higher precision
   double w1 = 3.455;
   double w2 = 7.5345;
+  w1 -= 34.99;//shorthandsyntax(w1-34.99)
   print('Sum of doubles: ${w1 + w2}');
 
   // The String data type is used to store string values (text). String values can be enclosed in single quotes (') or double quotes (").
