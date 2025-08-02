@@ -1,6 +1,6 @@
 void main(){
   //function  is a block of code that can be named and can be executed by calling its name. Functions can accept input parameters and can return a value
-  int sub(int num1, int num2) {
+  int sub(int num1, i                                                    nt num2) {
     int c = num1 + num2;
     return c;
   }
@@ -103,6 +103,8 @@ Lambda functions: These are anonymous functions that are written in a concise sy
   }
 
   student2("laiba", 22718);
+
+  
   //.)default positional parameter
   //if no default value is provided ,the default value is nul
   //the default value must be compile time constant

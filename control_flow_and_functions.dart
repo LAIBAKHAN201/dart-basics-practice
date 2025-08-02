@@ -22,17 +22,6 @@ void main() {
   for (var x in obj) {
     print(x);
   }
-  
-  //lexical closure
-  //closure :Aclosure as a function object that has access to variable in its lexical scope ,even when the function its used outside of its original scope
-  var d = 0;
-  void outer() {
-    a = 5;
-    print("outer fun =$a");
-  }
-
-  outer();//yaha yai easily print hojae ga but main outer function ko void main sai bahar likho gi to error aae ga that is lexicalclosure
-
 
 
 

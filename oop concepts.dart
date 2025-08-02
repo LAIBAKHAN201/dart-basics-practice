@@ -1,49 +1,5 @@
-library private;
 
-class Animal {
-  //class is a blueprint for creating object
-  //agar hm nimal kai feature again again likhne lag jae to code bht bara hojae ga feature ko ek class m dalte h jab chhae jb chae use krskte h
-  //code more optimized and execution fast
-  void pet() {
-    print("hello this is pet function");
-  }
-}
-//u can create on object using a constructor
-//var objname=new classname();
-//when u want to use class u have to create object
-// void main() {
-//   var a = new Animal(); //creating obj
-//   a.pet();
-// }
 
-//instance variable and instance method
-class student {
-  var name = "laiba"; //instance var
-  var age = 22;
-  var height; //yaha null aae ga by default
-  void display() {
-    //instance method
-    print("my name is $name");
-    print("my age is $age");
-    print("my age is $height");
-  }
-}
-// void main() {
-//   var s = new student();
-//   s.display();
-//   s.name = "laibakhan";
-//   s.display();
-// }
-
-//private instance var
-//use _ before var name,limited scope,private instance var exists at the library
-//library private; yai uper sab sai aaega
-class a {
-  var _avar = 199;
-  void display() {
-    print('private variable=$_avar');
-  }
-} //goto test.dart
 
 //super keyword
 class s1 {
