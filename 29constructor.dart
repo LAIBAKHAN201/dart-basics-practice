@@ -1,40 +1,8 @@
+/*
+In the Dart programming language, a constructor is a special method that is called when an object of a class is created. Constructors are used to initialize the object's instance variables and perform any other setup that is required before the object is used.
+There are several types of constructors in Dart, including default constructors, named constructors, and parameterized constructors.
+A default constructor is a constructor that takes no arguments and does not have a name. It is automatically provided by the compiler if you do not define any constructors for your class. */
 
-
-
-//super keyword
-class s1 {
-  var x = 10;
-  void display() {
-    print("super class");
-  }
-}
-
-class s2 extends s1 {
-  var x = 20;
-  void display() {
-    print(x);
-    //  print(super.x);//yaha 10 print hoga because of supper used for accessing parent element
-    // for accessing parent method
-    super.display();
-  }
-}
-// void main() {
-//   var obj = s2();
-//   obj.display(); // yaha s2 wala display use hoga
-// }
-
-//this keyword :use when there is name conflict
-class cc {
-  int x = 10, y = 90;
-  void display(int x, int y) {
-    print("x=$x \ny=$y");
-    print("x=${this.x}/n  y=${this.y}");
-  }
-}
-// void main() {
-// var o = cc();
-//   o.display(2,4);
-// }
 
 //constructor decalare a constructor by creating a function with the same name as its class
 //constructor name is similar to class name
@@ -73,4 +41,3 @@ class Person {
 // }
 
 //redirecting constructor
-
